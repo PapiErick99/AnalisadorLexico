@@ -1,5 +1,4 @@
-# Especificação de Tokens — Analisador Léxico
-
+# 1.2.1 - Definir e descrever os tokens que serão atendidos na Linguagem;
 
 ### Palavras Reservadas
 | Operador | Token   | Descrição                          |
@@ -12,6 +11,8 @@
 | `int`    | `INT`   | Tipo de dado inteiro               |
 | `float`  | `FLOAT` | Tipo de dado ponto flutuante       |
 | `main`   | `MAIN`  | Ponto de entrada do programa       |
+
+# 1.2.1 - Especificar os tokens da linguagem usando as expressões regulares;
 
 ### Literais e Identificadores
 | Operador                 | Token           | Descrição                                                  |
@@ -65,8 +66,10 @@
 
 
 
+# 1.2.1 - Especificar os tokens da linguagem usando as expressões regulares;
 
 
+# 1.2.1 - Construir a tabela de transição;
 
 
 
