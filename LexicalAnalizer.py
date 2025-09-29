@@ -48,6 +48,8 @@ TOKEN_DEFINICOES = [
 
 # Compila las expresiones regulares para que la búsqueda sea más eficiente.
 TOKEN_REGEX = [(tipo, re.compile(padrao)) for tipo, padrao in TOKEN_DEFINICOES]
+#prepara las expresiones regulares que luego se usarán para analizar cadenas de texto,
+# identificando distintos tokens según los patrones definidos.
 
 class AnalisadorLexico:
     """
