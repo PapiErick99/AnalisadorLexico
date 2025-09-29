@@ -1,12 +1,12 @@
 // Programa de teste para o Analisador Lexico
 int main() {
-    int resultado = 10;
-    int x = 5;
+    int &resultado = 10;
+    int &x = 5;
 
     // Estrutura de controle if-else
-    if (resultado > x) {
-        resultado = resultado + x * 2;
+    if (&resultado > &x) {
+        &resultado = &resultado + &x * 2;
     } else {
-        resultado = 0;
+        &resultado = 0;
     }
 }

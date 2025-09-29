@@ -11,22 +11,43 @@ TOKEN_DEFINICOES = [
     ('COMENTARIO',  r'//.*'),           # Comentário de linha única
     ('ESPACO',      r'\s+'),             # Espaços em branco, tabs, novas linhas
 
-    # -- Palavras Reservadas --
-    ('PALAVRA_RESERVADA', r'\b(if|else|for|while|do|int|float|main)\b'),
+    # -- Palabras Reservadas (cada una es un token único) --
+    ('IF', r'\bif\b'),
+    ('ELSE', r'\belse\b'),
+    ('FOR', r'\bfor\b'),
+    ('WHILE', r'\bwhile\b'),
+    ('DO', r'\bdo\b'),
+    ('INT', r'\bint\b'),
+    ('FLOAT', r'\bfloat\b'),
+    ('MAIN', r'\bmain\b'),
 
     # -- Literais e Identificadores --
     ('NUMERO',      r'\d+'),             # Números inteiros
-    ('IDENTIFICADOR', r'[a-zA-Z_][a-zA-Z0-9_]*'), # Identificadores (variáveis, etc)
+    ('IDENTIFICADOR',   r'&[a-zA-Z][a-zA-Z0-9_]*'), # Identificadores (variáveis, etc)
 
-    # -- Operadores --
-    ('OPERADOR_ATRIBUICAO', r'='),
-    ('OPERADOR_RELACIONAL', r'==|!=|<=|>=|<|>'),
-    ('OPERADOR_ARITMETICO', r'\+|-|\*|/'),
-    ('OPERADOR_LOGICO', r'&&|\|\||!'),
+    # -- Operadores Lógicos y Relacionales (los de 2 caracteres primero) --
+    ('E_LOGICO',        r'&&'),
+    ('OU_LOGICO',       r'\|\|'),
+    ('IGUAL_IGUAL',     r'=='),
+    ('DIFERENTE',       r'!='),
+    ('MENOR_IGUAL',     r'<='),
+    ('MAIOR_IGUAL',     r'>='),
 
-
-    # -- Delimitadores --
-    ('DELIMITADOR', r'[\(\)\{\};,]'),
+    # -- Operadores y Delimitadores de 1 caracter --
+    ('IGUAL',           r'='),
+    ('MAIS',            r'\+'),
+    ('MENOS',           r'-'),
+    ('MULTIPLICACAO',   r'\*'),
+    ('DIVISAO',         r'/'),
+    ('NAO_LOGICO',      r'!'),
+    ('MENOR',           r'<'),
+    ('MAIOR',           r'>'),
+    ('PARENTESE_ESQ',   r'\('),
+    ('PARENTESE_DIR',   r'\)'),
+    ('CHAVE_ESQ',       r'\{'),
+    ('CHAVE_DIR',       r'\}'),
+    ('PONTO_VIRGULA',   r';'),
+    ('VIRGULA',         r','),
 ]
 
 # Compila as expressões regulares para melhor desempenho
@@ -50,7 +71,7 @@ class AnalisadorLexico:
             if not token_encontrado:
                 # Se nenhum token for encontrado, significa um caractere inválido
                 caractere_invalido = self.codigo[self.posicao]
-                raise ValueError(f"Erro Léxico: Caractere inesperado '{caractere_invalido}' na posição {self.posicao}")
+                raise ValueError(f"Erro Léxico: Caracterer inesperado '{caractere_invalido}' na posição {self.posicao}")
 
         return self.tokens
 
