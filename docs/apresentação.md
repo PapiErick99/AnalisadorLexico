@@ -1,7 +1,7 @@
 # 1.2.1 - Definir e descrever os tokens que serão atendidos na Linguagem;
 
 ### Palavras Reservadas
-| Operador | Token   | Descrição                          |
+| Lexema | Token   | Descrição                          |
 | -------- | ------- | ---------------------------------- |
 | `if`     | `IF`    | Início de um bloco condicional     |
 | `else`   | `ELSE`  | Ramo alternativo do condicional    |
@@ -15,13 +15,13 @@
 # 1.2.1 - Especificar os tokens da linguagem usando as expressões regulares;
 
 ### Literais e Identificadores
-| Operador                 | Token           | Descrição                                                  |
+| Lexema                 | Token           | Descrição                                                  |
 | ------------------------ | --------------- | ---------------------------------------------------------- |
 | `[0-9]+`                 | `NUMERO`        | Números inteiros decimais                                  |
 | `&[a-zA-Z][a-zA-Z0-9_]*` | `IDENTIFICADOR` | Identificadores que devem começar obrigatoriamente com `&` |
 
 ### Operadores Lógicos
-| Operador | Token        | Descrição               |             |                         |
+| Lexema | Token        | Descrição               |             |                         |
 | -------- | ------------ | ----------------------- | ----------- | ----------------------- |
 | `&&`     | `E_LOGICO`   | Operador lógico E (AND) |             |                         |
 | `        |              | `                       | `OU_LOGICO` | Operador lógico OU (OR) |
@@ -29,7 +29,7 @@
 
 
 ### Operadores Relacionais
-| Operador | Token         | Descrição      |
+| Lexema | Token         | Descrição      |
 | -------- | ------------- | -------------- |
 | `==`     | `IGUAL_IGUAL` | Igualdade      |
 | `!=`     | `DIFERENTE`   | Diferença      |
@@ -39,7 +39,7 @@
 | `>=`     | `MAIOR_IGUAL` | Maior ou igual |
 
 ### Operadores Aritméticos e Atribuição
-| Operador | Token           | Descrição     |
+| Lexema | Token           | Descrição     |
 | -------- | --------------- | ------------- |
 | `=`      | `IGUAL`         | Atribuição    |
 | `+`      | `MAIS`          | Soma          |
@@ -48,7 +48,7 @@
 | `/`      | `DIVISAO`       | Divisão       |
 
 ### Delimitadores e Pontuação
-| Operador | Token           | Descrição          |
+| Lexema | Token           | Descrição          |
 | -------- | --------------- | ------------------ |
 | `(`      | `PARENTESE_ESQ` | Parêntese esquerdo |
 | `)`      | `PARENTESE_DIR` | Parêntese direito  |
@@ -59,7 +59,7 @@
 
 
 ### Tokens Ignorados
-| Operador | Token        | Descrição                                         |
+| Lexema | Token        | Descrição                                         |
 | -------- | ------------ | ------------------------------------------------- |
 | `// ...` | `COMENTARIO` | Comentário de linha, ignorado pelo analisador     |
 | `\s+`    | `ESPACO`     | Espaços, tabulações e quebras de linha, ignorados |
