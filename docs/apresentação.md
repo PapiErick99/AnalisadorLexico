@@ -66,7 +66,7 @@
 
 
 
-# 1.2.1 - Especificar os tokens da linguagem usando as expressões regulares;
+# 1.2.1 - Apresentar o reconhecimento dos tokens da linguagem por meio de AFD;
 
 
 # 1.2.1 - Construir a tabela de transição;
