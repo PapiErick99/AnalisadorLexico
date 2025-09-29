@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 # Importamos la clase AnalisadorLexico desde nuestro otro archivo.
-from lexer import AnalisadorLexico
+from LexicalAnalizer import AnalisadorLexico
 
 def main():
     """
