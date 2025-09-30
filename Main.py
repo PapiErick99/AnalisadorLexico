@@ -37,6 +37,5 @@ def main():
         print(e)
         sys.exit(1)
 
-# Se asegura de que la función main() solo se ejecute cuando este archivo es el principal.
 if __name__ == '__main__':
     main()
