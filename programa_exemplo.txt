@@ -1,4 +1,3 @@
-// Programa de teste para o Analisador Lexico
 int main() {
     int &resultado = 10;
     int &x = 5;

@@ -29,7 +29,7 @@ def main():
         # 3. Se imprimen los resultados de forma clara.
         print("--- Tokens Reconhecidos ---")
         for tipo, lexema in tokens:
-            print(f"Tipo: {tipo:<20} | Lexema: '{lexema}'")
+            print(f"Token: {tipo:<20} | Lexema: '{lexema}'")
         print("\n--- Análise Léxica Concluída com Sucesso! ---")
 
     except ValueError as e:
