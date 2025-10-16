@@ -7,7 +7,7 @@ def main():
     """
     Función principal que orquesta la ejecución del analizador léxico.
     """
-    nome_arquivo = 'programa_exemplo.txt'
+    nome_arquivo = 'data/programa_exemplo.txt'
 
     try:
         with open(nome_arquivo, 'r', encoding='utf-8') as arquivo:

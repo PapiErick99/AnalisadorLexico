@@ -1,0 +1,12 @@
+services:
+  python-app:
+    image: python:3.9-slim
+    container_name: python_interpreter
+    volumes:
+      - .:/app
+
+    working_dir: /app
+
+    stdin_open: true
+
+    tty: true
