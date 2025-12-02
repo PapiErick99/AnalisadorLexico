@@ -120,13 +120,8 @@ class AnalisadorLexico:
 
                 # Los comentarios y espacios en blanco se ignoran
                 if tipo not in ['COMENTARIO', 'ESPACO']:
-                    # Agregar token a la lista
-                    self.tokens.append({
-                        'tipo': tipo,
-                        'lexema': lexema,
-                        'linha': linha_token,
-                        'coluna': coluna_token
-                    })
+                    # Agregar token a la lista como tupla (tipo, lexema)
+                    self.tokens.append((tipo, lexema))
 
                     # Rastrear declaraciones de tipo
                     if tipo in ['INT', 'FLOAT']:
@@ -176,10 +171,10 @@ class AnalisadorLexico:
 
         for idx, token in enumerate(self.tokens, 1):
             print(f"{idx:<5} "
-                  f"{token['tipo']:<20} "
-                  f"{token['lexema']:<20} "
-                  f"{token['linha']:<8} "
-                  f"{token['coluna']:<8}")
+                  f"{token[0]:<20} "
+                  f"{token[1]:<20} "
+                  f"{'N/A':<8} "
+                  f"{'N/A':<8}")
 
         print("=" * 80)
         print(f"Total de tokens: {len(self.tokens)}")
