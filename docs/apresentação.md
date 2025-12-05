@@ -23,46 +23,46 @@
 ### Operadores Lógicos
 | Lexema | Token        | Descrição               |             |                         |
 | -------- | ------------ | ----------------------- | ----------- | ----------------------- |
-| `&&`     | `E_LOGICO`   | Operador lógico E (AND) |             |                         |
+| `&&`     | `&&`   | Operador lógico E (AND) |             |                         |
 | `        |              | `                       | `OU_LOGICO` | Operador lógico OU (OR) |
-| `!`      | `NAO_LOGICO` | Negação lógica (NOT)    |             |                         |
+| `!`      | `!` | Negação lógica (NOT)    |             |                         |
 
 
 ### Operadores Relacionais
 | Lexema | Token         | Descrição      |
 | -------- | ------------- | -------------- |
-| `==`     | `IGUAL_IGUAL` | Igualdade      |
-| `!=`     | `DIFERENTE`   | Diferença      |
-| `<`      | `MENOR`       | Menor que      |
-| `<=`     | `MENOR_IGUAL` | Menor ou igual |
-| `>`      | `MAIOR`       | Maior que      |
-| `>=`     | `MAIOR_IGUAL` | Maior ou igual |
+| `==`     | `==` | Igualdade      |
+| `!=`     | `!=`   | Diferença      |
+| `<`      | `<`       | Menor que      |
+| `<=`     | `<=` | Menor ou igual |
+| `>`      | `>`       | Maior que      |
+| `>=`     | `>=` | Maior ou igual |
 
 ### Operadores Aritméticos e Atribuição
 | Lexema | Token           | Descrição     |
 | -------- | --------------- | ------------- |
-| `=`      | `IGUAL`         | Atribuição    |
-| `+`      | `MAIS`          | Soma          |
-| `-`      | `MENOS`         | Subtração     |
-| `*`      | `MULTIPLICACAO` | Multiplicação |
-| `/`      | `DIVISAO`       | Divisão       |
+| `=`      | `=`         | Atribuição    |
+| `+`      | `+`          | Soma          |
+| `-`      | `-`         | Subtração     |
+| `*`      | `*` | Multiplicação |
+| `/`      | `/`       | Divisão       |
 
 ### Delimitadores e Pontuação
 | Lexema | Token           | Descrição          |
 | -------- | --------------- | ------------------ |
-| `(`      | `PARENTESE_ESQ` | Parêntese esquerdo |
-| `)`      | `PARENTESE_DIR` | Parêntese direito  |
-| `{`      | `CHAVE_ESQ`     | Chave esquerda     |
-| `}`      | `CHAVE_DIR`     | Chave direita      |
-| `;`      | `PONTO_VIRGULA` | Ponto e vírgula    |
-| `,`      | `VIRGULA`       | Vírgula            |
+| `(`      | `(` | Parêntese esquerdo |
+| `)`      | `)` | Parêntese direito  |
+| `{`      | `{`     | Chave esquerda     |
+| `}`      | `}`     | Chave direita      |
+| `;`      | `;` | Ponto e vírgula    |
+| `,`      | `,`       | Vírgula            |
 
 
 ### Tokens Ignorados
 | Lexema | Token        | Descrição                                         |
 | -------- | ------------ | ------------------------------------------------- |
-| `// ...` | `COMENTARIO` | Comentário de linha, ignorado pelo analisador     |
-| `\s+`    | `ESPACO`     | Espaços, tabulações e quebras de linha, ignorados |
+| `// ...` | `//` | Comentário de linha, ignorado pelo analisador     |
+| `\s+`    | `\s`     | Espaços, tabulações e quebras de linha, ignorados |
 
 
 
