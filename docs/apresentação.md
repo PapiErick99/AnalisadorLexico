@@ -271,7 +271,7 @@ g
 
 # Tabela Sintática - Analisador Descendente Preditivo LL(1)
 
-A tabela abaixo define as regras de produção a serem empilhadas com base no **Não-Terminal** (topo da pilha) e no **Token de Entrada** (lookahead).
+A tabela abaixo define as regras de produção a serem empilhadas com base no **Não-Terminal** (topo da pilha) e no **Token de Entrada**.
 
 **Legenda:**
 * **ε (Epsilon):** Produção vazia (deve-se desempilhar o não-terminal sem consumir entrada).
@@ -319,7 +319,6 @@ A tabela abaixo define as regras de produção a serem empilhadas com base no **
 | `<ForStmt>` | `FOR` | `FOR "(" <AtribFor> ";" <Condicao> ";" <AtribFor> ")" <Cmd>` |
 | `<AtribFor>` | `IDENTIFICADOR` | `IDENTIFICADOR "=" <Exp>` |
 
-> **Nota sobre ElsePart:** A produção **ε** é escolhida quando o token de entrada pertence ao conjunto *FOLLOW* do `IfStmt`, indicando que o `if` terminou sem um `else`.
 
 ## 4. Lógica Booleana (Condições)
 
