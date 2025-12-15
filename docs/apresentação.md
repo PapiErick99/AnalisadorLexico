@@ -182,24 +182,6 @@ $G = (V, T, P, S)$
 <Fator>         ::= IDENTIFICADOR
                   | NUMERO
                   | "(" <Exp> ")"
-
-
-### Verificación de Tokens Utilizados
-g
-1.  **Ignorados:** `COMENTARIO`, `ESPACO` (Manejados por el Lexer, no la gramática).
-2.  **Palabras Clave:** Todas usadas en `2.1`, `2.2` y `2.3`.
-3.  **Identificadores/Números:** Usados en `Declaracao`, `Fator` (Exp) y `Atribuicao`.
-4.  **Lógicos (&&, ||, !):**
-    * `||` -> Usado en `<CondicaoL>`
-    * `&&` -> Usado en `<CondTermoL>`
-    * `!` -> Usado en `<CondFator>`
-5.  **Relacionales (==, !=, <=, >=, <, >):** Todos agrupados en `<OpRel>`.
-6.  **Operadores (+, -, *, /, =):** Usados en `<ExpL>`, `<TermoL>` y `<Atribuicao>`.
-7.  **Delimitadores:**
-    * `{ }` -> En `<Bloque>`
-    * `( )` -> En `<IfStmt>`, `<Fator>`, etc.
-    * `;` -> Final de sentencias.
-    * `,` -> En `<ListaIds>`.
 ```
 ----
 
