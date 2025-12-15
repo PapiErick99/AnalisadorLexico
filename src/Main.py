@@ -24,6 +24,7 @@ def main():
     # ==========================
     # Análise Léxica
     # ==========================
+
     lexer = AnalisadorLexico(codigo)
     tokens = lexer.analisar()
 

@@ -91,6 +91,7 @@ class AnalisadorLexico:
                 self._avancar_caractere()
 
         # self.tabela_simbolos.exibir()
+        #self.relatorio_erros.exibir()
         return self.tokens
 
     def _avancar_caractere(self):

@@ -118,23 +118,3 @@ class TabelaSimbolos:
         
         print("="*90)
         print(f"Total de símbolos: {self.total_simbolos()}")
-    
-    def exportar_json(self):
-        """
-        Exporta la tabla de símbolos como JSON.
-        """
-        import json
-        return json.dumps(self.listar(), indent=2, ensure_ascii=False)
-    
-    def exportar_csv(self):
-        """
-        Exporta la tabla de símbolos como CSV.
-        """
-        linhas = ["ID,Nome,Tipo,TipoDado,Linha,Coluna,Escopo"]
-        for simbolo in self.listar():
-            linhas.append(
-                f"{simbolo['id']},{simbolo['nome']},{simbolo['tipo']},"
-                f"{simbolo['tipo_dado']},{simbolo['linha']},"
-                f"{simbolo['coluna']},{simbolo['escopo']}"
-            )
-        return '\n'.join(linhas)

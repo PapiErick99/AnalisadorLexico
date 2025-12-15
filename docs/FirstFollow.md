@@ -2,33 +2,33 @@
 
 ## FIRST
 
-| Não-terminal | FIRST |
-|---|---|
-| Programa | { INT } |
-| Bloque | { { } |
+| Não-terminal | FIRST                                                   |
+|---|---------------------------------------------------------|
+| Programa | { INT }                                                 |
+| Bloque | { { } }                                                  |
 | Cmds | { INT, FLOAT, IDENTIFICADOR, IF, WHILE, DO, FOR, {, ε } |
-| Cmd | { INT, FLOAT, IDENTIFICADOR, IF, WHILE, DO, FOR, { } |
-| Declaracao | { INT, FLOAT } |
-| Tipo | { INT, FLOAT } |
-| ListaIds | { ,, ε } |
-| Atribuicao | { IDENTIFICADOR } |
-| IfStmt | { IF } |
-| ElsePart | { ELSE, ε } |
-| WhileStmt | { WHILE } |
-| DoWhileStmt | { DO } |
-| ForStmt | { FOR } |
-| AtribFor | { IDENTIFICADOR } |
-| Condicao | { !, IDENTIFICADOR, NUMERO, ( } |
-| CondicaoL | { ||, ε } |
-| CondTermo | { !, IDENTIFICADOR, NUMERO, ( } |
-| CondTermoL | { &&, ε } |
-| CondFator | { !, IDENTIFICADOR, NUMERO, ( } |
-| OpRel | { ==, !=, <=, >=, <, > } |
-| Exp | { IDENTIFICADOR, NUMERO, ( } |
-| ExpL | { +, -, ε } |
-| Termo | { IDENTIFICADOR, NUMERO, ( } |
-| TermoL | { *, /, ε } |
-| Fator | { IDENTIFICADOR, NUMERO, ( } |
+| Cmd | { INT, FLOAT, IDENTIFICADOR, IF, WHILE, DO, FOR, { }    |
+| Declaracao | { INT, FLOAT }                                          |
+| Tipo | { INT, FLOAT }                                          |
+| ListaIds | { ,, ε }                                                |
+| Atribuicao | { IDENTIFICADOR }                                       |
+| IfStmt | { IF }                                                  |
+| ElsePart | { ELSE, ε }                                             |
+| WhileStmt | { WHILE }                                               |
+| DoWhileStmt | { DO }                                                  |
+| ForStmt | { FOR }                                                 |
+| AtribFor | { IDENTIFICADOR }                                       |
+| Condicao | { !, IDENTIFICADOR, NUMERO, ( }                         |
+| CondicaoL | {                                                       ||, ε } |
+| CondTermo | { !, IDENTIFICADOR, NUMERO, ( }                         |
+| CondTermoL | { &&, ε }                                               |
+| CondFator | { !, IDENTIFICADOR, NUMERO, ( }                         |
+| OpRel | { ==, !=, <=, >=, <, > }                                |
+| Exp | { IDENTIFICADOR, NUMERO, ( }                            |
+| ExpL | { +, -, ε }                                             |
+| Termo | { IDENTIFICADOR, NUMERO, ( }                            |
+| TermoL | { *, /, ε }                                             |
+| Fator | { IDENTIFICADOR, NUMERO, ( }                            |
 
 ## FOLLOW
 

@@ -93,20 +93,3 @@ class RelatorioErros:
             print(f"   - Erros Sintáticos: {sintaticos}")
         if semanticos > 0:
             print(f"   - Erros Semânticos: {semanticos}")
-    
-    def exportar_texto(self):
-        """
-        Exporta el reporte como texto plano.
-        """
-        if not self.tem_erros():
-            return "Nenhum erro encontrado."
-        
-        linhas = ["RELATÓRIO DE ERROS", "=" * 50]
-        for erro in self.erros:
-            linhas.append(
-                f"[{erro['tipo']}] Linha {erro['linha']}, Coluna {erro['coluna']}: "
-                f"{erro['mensagem']}"
-            )
-            if erro['lexema']:
-                linhas.append(f"   Lexema: '{erro['lexema']}'")
-        return '\n'.join(linhas)
