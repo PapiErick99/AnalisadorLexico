@@ -90,6 +90,7 @@ class AnalisadorLexico:
                 # Avanzar para continuar el análisis
                 self._avancar_caractere()
 
+        # self.tabela_simbolos.exibir()
         return self.tokens
 
     def _avancar_caractere(self):

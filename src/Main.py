@@ -28,11 +28,11 @@ def main():
     tokens = lexer.analisar()
 
     print("--- Tokens Reconhecidos ---")
-    for tipo, lexema in tokens:
-        print(f"Token: {tipo:<20} | Lexema: '{lexema}'")
+    # for tipo, lexema in tokens:
+    lexer.exibir_tokens()
+    #    print(f"Token: {tipo:<20} | Lexema: '{lexema}'")
 
     print("\n--- Análise Léxica Concluída com Sucesso! ---\n")
-
     # ==========================
     # Análise Sintática
     # ==========================
